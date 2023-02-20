@@ -40,8 +40,7 @@ public class PersonaController {
         if (personaService.existsByNombre(dtopersona.getNombre())) {
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
-        Persona persona = new Persona(
-                dtopersona.getNombre(), dtopersona.getApellido(), dtopersona.getDescripcion(), dtopersona.getImg()
+        Persona persona = new Persona(dtopersona.getNombre(), dtopersona.getApellido(), dtopersona.getDescripcion(), dtopersona.getImg()
         );
         personaService.save(persona);
         return new ResponseEntity(new Mensaje("Persona creada"), HttpStatus.OK);
