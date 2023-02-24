@@ -3,17 +3,21 @@ package com.portfoliozdanovicz.nz.Dto;
 import javax.validation.constraints.NotBlank;
 
 public class dtoHys {
+
     @NotBlank
     private String nombre;
     @NotBlank
     private int porcentaje;
 
+    private String img;
+
     public dtoHys() {
     }
 
-    public dtoHys(String nombre, int porcentaje) {
+    public dtoHys(String nombre, int porcentaje, String img) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
+        this.img = img;
     }
 
     public String getNombre() {
@@ -32,5 +36,12 @@ public class dtoHys {
         this.porcentaje = porcentaje;
     }
     
-    
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
 }

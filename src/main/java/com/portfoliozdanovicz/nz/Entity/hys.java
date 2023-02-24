@@ -5,27 +5,26 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
-
 @Entity
 public class hys {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
     private int porcentaje;
-
+    private String img;
     //Construsctor
-    
+
     public hys() {
     }
 
-    public hys(String nombre, int porcentaje) {
+    public hys(String nombre, int porcentaje, String img) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
+        this.img = img;
     }
 
-    
     //Getters y Setters
     public int getId() {
         return id;
@@ -49,5 +48,13 @@ public class hys {
 
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

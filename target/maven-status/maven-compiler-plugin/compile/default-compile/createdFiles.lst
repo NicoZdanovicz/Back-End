@@ -15,6 +15,9 @@ com\portfoliozdanovicz\nz\Security\MainSecurity.class
 com\portfoliozdanovicz\nz\Controller\CHys.class
 com\portfoliozdanovicz\nz\Security\Service\RolService.class
 com\portfoliozdanovicz\nz\Service\ImpPersonaService.class
+com\portfoliozdanovicz\nz\Service\SProyectos.class
+com\portfoliozdanovicz\nz\Controller\CProyectos.class
+com\portfoliozdanovicz\nz\Dto\dtoProyectos.class
 com\portfoliozdanovicz\nz\Security\Repository\iRolRepository.class
 com\portfoliozdanovicz\nz\Entity\Persona.class
 com\portfoliozdanovicz\nz\Security\Repository\iUsuarioRepository.class
@@ -22,6 +25,7 @@ com\portfoliozdanovicz\nz\Service\SExperiencia.class
 com\portfoliozdanovicz\nz\Repository\REducacion.class
 com\portfoliozdanovicz\nz\Entity\hys.class
 com\portfoliozdanovicz\nz\Entity\Experiencia.class
+com\portfoliozdanovicz\nz\Entity\Proyectos.class
 com\portfoliozdanovicz\nz\Dto\dtoExperiencia.class
 com\portfoliozdanovicz\nz\Service\SEducacion.class
 com\portfoliozdanovicz\nz\Dto\dtoEducacion.class
@@ -29,6 +33,7 @@ com\portfoliozdanovicz\nz\NzApplication.class
 com\portfoliozdanovicz\nz\Repository\RExperiencia.class
 com\portfoliozdanovicz\nz\Security\Service\UsuarioService.class
 com\portfoliozdanovicz\nz\Security\Controller\AuthController.class
+com\portfoliozdanovicz\nz\Repository\RProyectos.class
 com\portfoliozdanovicz\nz\Security\Dto\JwtDto.class
 com\portfoliozdanovicz\nz\Security\Enums\RolNombre.class
 com\portfoliozdanovicz\nz\Dto\dtoHys.class
